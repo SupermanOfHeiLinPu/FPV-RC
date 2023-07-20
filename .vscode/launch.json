@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "build/H7Controller.elf",
+            // "svdFile": ".vscode/STM32F7x7.svd",
+            "configFiles": [
+                ".vscode/cmsis-dap.cfg",
+                //".vscode/stlink-v2.cfg",
+                ".vscode/stm32h7x.cfg"
+            ],
+            //"preLaunchTask": "Build project"
+        }
+    ]
+}
